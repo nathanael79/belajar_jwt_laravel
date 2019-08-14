@@ -1,0 +1,139 @@
+{
+	"variables": [],
+	"info": {
+		"name": "belajar JWT",
+		"_postman_id": "9c068c7f-6840-c65d-b660-3f66d6272fb6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": " http://127.0.0.1:8000/api/register",
+			"request": {
+				"url": " http://127.0.0.1:8000/api/register",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Imanuel Ronaldo",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "imanuelronaldo@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "bygrace",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "bygrace",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " http://127.0.0.1:8000/api/login",
+			"request": {
+				"url": " http://127.0.0.1:8000/api/login",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "imanuelronaldo@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "bygrace",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " http://127.0.0.1:8000/api/open",
+			"request": {
+				"url": " http://127.0.0.1:8000/api/open",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " http://127.0.0.1:8000/api/closed",
+			"request": {
+				"url": " http://127.0.0.1:8000/api/closed",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU2NTc3NDMwOSwiZXhwIjoxNTY1Nzc3OTA5LCJuYmYiOjE1NjU3NzQzMDksImp0aSI6IlYyZUhGZWtReDFkcnI2dkgiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.1KaKnYNfHp9vs-p3z79uVHNHglz7zpULaQae3IxafdU",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " http://127.0.0.1:8000/api/user",
+			"request": {
+				"url": " http://127.0.0.1:8000/api/user",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU2NTc3NDMwOSwiZXhwIjoxNTY1Nzc3OTA5LCJuYmYiOjE1NjU3NzQzMDksImp0aSI6IlYyZUhGZWtReDFkcnI2dkgiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.1KaKnYNfHp9vs-p3z79uVHNHglz7zpULaQae3IxafdU",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " http://127.0.0.1:8000/api/user",
+			"request": {
+				"url": " http://127.0.0.1:8000/api/user",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer thistokeniswrong",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
